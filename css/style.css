@@ -1,0 +1,74 @@
+/* defining my variables */
+:root {
+  /* some colors first */
+  --background-c: #F0F0F0;
+  --header-c: #50787D;
+  --bodyc: #524643;
+  --linkc: #E7473C;
+}
+
+/* variables */
+
+* {
+  background-color: var(--background-c);
+}
+
+/* fonts */
+h1,
+h2,
+h3 {
+  font-family: "Libre Baskerville", serif;
+  text-align: left;
+  color: var(--header-c)
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  line-height: 1.35em;
+  color: var(--bodyc)
+}
+
+/* banner */
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.primary-navigation a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--linkc)
+}
+
+.primary-navigation a:hover {
+  text-decoration: underline;
+}
+
+/* banner */
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.content {
+  max-width: 60%;
+  margin: 7% auto;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+
+p {
+  margin-bottom: 6em;
+}
