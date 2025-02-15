@@ -3,8 +3,8 @@
   /* some colors first */
   --background-c: #F0F0F0;
   --header-c: #50787D;
-  --bodyc: #524643;
-  --linkc: #E7473C;
+  --body-c: #524643;
+  --link-c: #E7473C;
 }
 
 /* variables */
@@ -25,6 +25,7 @@ h2,
 h3 {
   font-family: "Libre Baskerville", serif;
   text-align: left;
+  line-height: 1.3em;
   color: var(--header-c)
 }
 
@@ -45,11 +46,11 @@ body {
   font-size: 1rem;
   text-align: left;
   line-height: 1.4rem;
-  color: var(--bodyc)
+  color: var(--body-c)
 }
 
 /* banner */
-.banner {
+/* .banner {
   position: fixed;
   top: 0;
   left: 0;
@@ -57,14 +58,23 @@ body {
   padding: 15px 0;
   text-align: center;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .primary-navigation a {
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.5rem;
-  color: var(--linkc)
+  color: var(--link-c)
+}
+
+.nav-list {
+  /* background-color: pink; */
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  list-style: none;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .primary-navigation a:hover {
@@ -81,11 +91,10 @@ body {
 
 
 .content {
-  max-width: 60%;
-  margin: 7% auto;
+  max-width: 785px;
+
+  margin: 3% auto;
   padding: 20px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
 }
 
 
