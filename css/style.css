@@ -9,9 +9,34 @@
 
 /* variables */
 
-
 * {
+  box-sizing: border-box;
+}
+
+/* A CLASS I USE TO MAKE THINGS VERY OBVIOUS */
+.see {
+  background-color: pink;
+  border: 5px greenyellow;
+}
+
+
+
+body {
   background-color: var(--background-c);
+  margin: 0;
+  padding: 0;
+}
+
+
+.header {
+  /* border: 5px dashed red; */
+
+}
+
+.wrapper {
+  max-inline-size: 850px;
+  margin: auto;
+  padding: 0 15px;
 }
 
 /* fonts */
@@ -24,7 +49,7 @@ h1,
 h2,
 h3 {
   font-family: "Libre Baskerville", serif;
-  text-align: left;
+  text-align: start;
   line-height: 1.3em;
   color: var(--header-c)
 }
@@ -44,49 +69,34 @@ h3 {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  text-align: left;
+  text-align: start;
   line-height: 1.4rem;
   color: var(--body-c)
 }
 
+.primary-navigation {
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+  border-block-end: 2px var(--body-c) solid;
+  line-height: 0;
+  /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
+}
 
-.primary-navigation a {
-  margin: 0 15px;
+.nav-list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-list a {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.5rem;
   color: var(--link-c)
 }
 
-.nav-list {
-  margin: 0 auto;
-  padding: 15px;
-  display: flex;
-  list-style: none;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.primary-navigation a:hover {
+.nav-list a:hover {
   text-decoration: underline;
-}
-
-/* banner */
-
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-
-.content {
-  max-width: 785px;
-
-  margin: 3% auto;
-  padding: 20px;
-}
-
-
-p {
-  margin-bottom: 1.25rem;
 }
