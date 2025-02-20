@@ -71,6 +71,7 @@ body {
 .header {
   /* border: 4px solid brown; */
   border-bottom: 1px solid var(--body-c);
+  padding-block-start: 5px;
 }
 
 .primary-navigation {
