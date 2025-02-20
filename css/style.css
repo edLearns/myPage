@@ -84,9 +84,11 @@ body {
 .nav-list {
   /* border: 3px dotted black; */
   display: flex;
+  flex-wrap: wrap;
   gap: 0.85em;
   list-style: none;
   padding: 0;
+  padding-inline-start: 1rem;
   margin-block: 0;
 }
 
